@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white text-black">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latent Intelligence Labs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes slideIn {
+      0% {
+        transform: scale(0.5) translateY(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .pixel {
+      animation: slideIn 1s ease-out forwards;
+    }
+
+    #intro {
+      animation: fadeOut 1s ease-in-out forwards;
+      animation-delay: 2.5s;
+    }
+
+    #content {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+      animation-delay: 2.7s;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-white text-black flex flex-col items-center justify-center px-4">
+
+  <!-- INTRO PIXEL ART -->
+  <div id="intro" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+    <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <!-- Pixelart Quadrate -->
+      <rect x="10" y="10" width="8" height="8" fill="black" class="pixel" style="animation-delay: 0.1s;" />
+      <rect x="25" y="10" width="8" height="8" fill="black" class="pixel" style="animation-delay: 0.2s;" />
+      <rect x="40" y="10" width="8" height="8" fill="black" class="pixel" style="animation-delay: 0.3s;" />
+      <rect x="55" y="10" width="8" height="8" fill="black" class="pixel" style="animation-delay: 0.4s;" />
+      <rect x="70" y="10" width="8" height="8" fill="black" class="pixel" style="animation-delay: 0.5s;" />
+
+      <rect x="20" y="25" width="8" height="8" fill="black" class="pixel" style="animation-delay: 0.6s;" />
+      <rect x="35" y="25" width="8" height="8" fill="black" class="pixel" style="animation-delay: 0.7s;" />
+      <rect x="50" y="25" width="8" height="8" fill="black" class="pixel" style="animation-delay: 0.8s;" />
+      <rect x="65" y="25" width="8" height="8" fill="black" class="pixel" style="animation-delay: 0.9s;" />
+    </svg>
+  </div>
+
+  <!-- CONTENT -->
+  <div id="content" class="flex flex-col items-center text-center">
+
+    <!-- Logo -->
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABf8AAAX/BAMAAADvSZ4cAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAA..." 
+         alt="Latent Intelligence Labs Logo" class="w-24 h-24 mb-6" />
+
+    <!-- Company Name -->
+    <h1 class="text-3xl sm:text-4xl font-bold mb-2">
+      Latent Intelligence Labs
+    </h1>
+
+    <!-- Slogan -->
+    <p class="text-lg italic mb-4">
+      "Where vectors learn to think."
+    </p>
+
+    <!-- Description -->
+    <p class="max-w-xl text-gray-700 mb-6">
+      We are currently building <strong>LatentLM</strong> – a fundamentally new kind of language model.  
+      Instead of predicting words, it learns to think in vector space.  
+      LatentLM is actively under development.
+    </p>
+
+    <!-- Status -->
+    <span class="px-3 py-1 bg-black text-white text-sm rounded-full">In Development</span>
+
+    <!-- GitHub -->
+    <a href="https://github.com/Latent-Intelligence-Labs" target="_blank"
+       class="mt-6 inline-block px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition rounded">
+      View on GitHub
+    </a>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-sm text-gray-500">
+      © 2025 Latent Intelligence Labs<br>
+      <a href="https://github.com/Latent-Intelligence-Labs" target="_blank" class="underline hover:text-black">
+        github.com/Latent-Intelligence-Labs
+      </a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
