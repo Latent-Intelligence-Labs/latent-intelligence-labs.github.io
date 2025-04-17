@@ -1,76 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-white text-black">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Latent Intelligence Labs</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {{
-      plugins: [tailwindcss.typography]
-    }}
-  </script>
-  <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.9/dist/typography.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #F7F7F7;
+    }
+  </style>
 </head>
-<body class="min-h-screen bg-white text-black flex flex-col items-center px-4">
+<body class="min-h-screen text-black flex flex-col items-center px-6 py-10">
 
-  <!-- MAIN CONTENT -->
-  <div class="flex flex-col items-center text-center py-10">
+  <!-- Logo -->
+  <img src="logo.PNG" alt="Latent Intelligence Labs Logo" class="w-24 h-24 mb-6" />
 
-    <!-- Logo -->
-    <img src="logo.png" alt="Latent Intelligence Labs Logo" class="w-24 h-24 mb-6" />
+  <!-- Name & Slogan -->
+  <h1 class="text-4xl font-bold mb-2 text-center">Latent Intelligence Labs</h1>
+  <p class="italic text-lg text-center mb-8">"Where vectors learn to think."</p>
 
-    <!-- Name & Slogan -->
-    <h1 class="text-4xl font-bold mb-2">Latent Intelligence Labs</h1>
-    <p class="italic text-lg mb-8">"Where vectors learn to think."</p>
+  <!-- Main Content -->
+  <div class="max-w-3xl text-gray-800 space-y-6 text-base leading-relaxed text-left">
 
-    <!-- Textbereich mit schöner Formatierung -->
-    <div class="prose prose-neutral text-left max-w-3xl">
-      <p>
-        We are a new kind of AI lab – rethinking how intelligence emerges in machines.  
-        Instead of predicting one token at a time, we’re building systems that reason in rich, latent spaces.  
-        Our goal is to make AI more intuitive, grounded, and meaning-aware.
-      </p>
+    <p>
+      We are a new kind of AI lab – rethinking how intelligence emerges in machines.
+      Instead of predicting one token at a time, we’re building systems that reason in rich, latent spaces.
+      Our goal is to make AI more intuitive, grounded, and meaning-aware.
+    </p>
 
-      <h2>LatentLM</h2>
-      <p>
-        <strong>LatentLM</strong> is our flagship model – a radical reimagining of the language model.  
-        It doesn’t just continue text. It <strong>understands</strong>, <strong>transforms</strong>, and <strong>responds</strong> using high-dimensional vector representations.  
-        With separate encoder, latent manipulator, and decoder modules, LatentLM is designed to think before it speaks.
-      </p>
-      <p><span class="inline-block px-3 py-1 bg-black text-white text-sm rounded-full">Status: In Development</span></p>
+    <h2 class="text-xl font-semibold">LatentLM</h2>
+    <p>
+      <strong>LatentLM</strong> is our flagship model – a radical reimagining of the language model.
+      It doesn’t just continue text. It <strong>understands</strong>, <strong>transforms</strong>, and <strong>responds</strong>
+      using high-dimensional vector representations. With separate encoder, latent manipulator, and decoder modules,
+      LatentLM is designed to think before it speaks.
+    </p>
+    <span class="inline-block px-3 py-1 bg-black text-white text-sm rounded-full">Status: In Development</span>
 
-      <h2>Research Focus</h2>
-      <p>
-        Our research explores latent cognition, modular neural architecture, vector-space planning, and controllable generation.  
-        We believe that true intelligence requires internal modeling, not just external response.  
-        Every model we build is a step toward machines that don’t just generate — but genuinely <strong>understand</strong>.
-      </p>
+    <h2 class="text-xl font-semibold">Research Focus</h2>
+    <p>
+      Our research explores latent cognition, modular neural architecture, vector-space planning, and controllable generation.
+      We believe that true intelligence requires internal modeling, not just external response.
+      Every model we build is a step toward machines that don’t just generate — but genuinely <strong>understand</strong>.
+    </p>
 
-      <h2>Our Vision</h2>
-      <p>
-        Imagine an AI that doesn’t guess your next word — but understands your full idea.  
-        That doesn’t just imitate — but reflects, interprets, and reasons.  
-        At Latent Intelligence Labs, we are building the foundations for a new era of deep, meaningful artificial intelligence.  
-        AI that thinks in latent space — not just surface noise.
-      </p>
-    </div>
-
-    <!-- GitHub Button -->
-    <a href="https://github.com/Latent-Intelligence-Labs" target="_blank"
-       class="mt-8 inline-block px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition rounded">
-      View Our GitHub
-    </a>
-
-    <!-- Footer -->
-    <footer class="mt-12 text-sm text-gray-500 text-center">
-      © 2025 Latent Intelligence Labs<br />
-      <a href="https://github.com/Latent-Intelligence-Labs" target="_blank" class="underline hover:text-black">
-        github.com/Latent-Intelligence-Labs
-      </a>
-    </footer>
-
+    <h2 class="text-xl font-semibold">Our Vision</h2>
+    <p>
+      Imagine an AI that doesn’t guess your next word — but understands your full idea.
+      That doesn’t just imitate — but reflects, interprets, and reasons.
+      At Latent Intelligence Labs, we are building the foundations for a new era of deep, meaningful artificial intelligence.
+      AI that thinks in latent space — not just surface noise.
+    </p>
   </div>
+
+  <!-- GitHub Button -->
+  <a href="https://github.com/Latent-Intelligence-Labs" target="_blank"
+     class="mt-10 inline-block px-5 py-2 border border-black text-black hover:bg-black hover:text-white transition rounded">
+    View Our GitHub
+  </a>
+
+  <!-- Footer -->
+  <footer class="mt-10 text-sm text-gray-500 text-center">
+    © 2025 Latent Intelligence Labs<br />
+    <a href="https://github.com/Latent-Intelligence-Labs" class="underline hover:text-black">
+      github.com/Latent-Intelligence-Labs
+    </a>
+  </footer>
 
 </body>
 </html>
